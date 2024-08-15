@@ -1,38 +1,113 @@
-.App {
+body{
+  font-size: 1rem;
+  color: #31363F;
+  background-color: #222831;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  padding: 30px;
+}
+
+.App{
+  max-width: 600px;
+  margin: 0 auto 300px;
+  background-color: #EEEEEE;
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+
+h1{
   text-align: center;
+  font-size: 1.875rem;
+  font-weight: 500;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2{
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 500;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p{
+  margin: 10px 0;
+  font-weight: 400;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+input{
+  box-sizing: border-box;
+}
+
+button{
+  background-color: #222831;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  opacity: .8;
+  transition: .3s;
+}
+
+button:hover{
+  /* background-color: #31363F; */
+  opacity: 1;
+}
+
+
+
+/* ----------------------------------------- */
+.todo{
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* ----------------------------------------- */
+
+
+.complete{
+  background-color: #32af09;
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.remove{
+  background-color: #c40303;
+  color: #fff;
+}
+
+.todo-form{
+  border-top: 1px solid #31363F;
+  padding-bottom: 1.5rem;
+}
+
+input, select{
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #76ABAE;
+  border-radius: 7px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+@media (max-width: 570px){
+  .todo{
+    display: flex;
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  p{
+    font-weight: 500;
+  }
+
+  button{
+    width: 100%;
+    margin-bottom: 5px;
   }
 }
